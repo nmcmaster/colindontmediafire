@@ -25,7 +25,7 @@ function App() {
             alt: "drug war stems",
         },
         {
-            href: "https://www.mediafire.com/file/f7ra0mxwz29lxt1/a_better_tomorrow_original_stems.zip/file",
+            href: "https://www.mediafire.com/file/f7ra0mxwz29lxt1/a_better_tomorrow_original_stems.zip/",
             alt: "a better tomorrow stems",
         },
         {
