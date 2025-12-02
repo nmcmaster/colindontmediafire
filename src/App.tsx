@@ -6,9 +6,9 @@ function App() {
             name: "Who Knows Bass",
             file: "/audio/who knows bass over 10-12-25.mp3",
         },
+        { name: "Mick Xerxes w/bass", file: "/audio/xerx werx.mp3" },
     ];
     const kernels = [
-        { name: "Mick Xerxes w/bass", file: "/audio/xerx werx.mp3" },
         { name: "Xerxes", file: "/audio/xerxes original.mp3" },
         { name: "Drug War", file: "/audio/drug war original.mp3" },
         {
