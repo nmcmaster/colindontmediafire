@@ -16,6 +16,14 @@ function App() {
             file: "/audio/a better tomorrow original.mp3",
         },
     ];
+    const oldLineup = [
+        {
+            name: "Darius guitar overdub on rehearsal",
+            file: "/audio/darius rehearsal overdub 10062025.mp3",
+            pdf: "/pdf/darius.pdf",
+        },
+        { name: "No hope", file: "", pdf: "/pdf/no hope 093025" },
+    ];
     const links = [
         {
             href: "https://www.mediafire.com/file/0crqrnahjvcxon1/who_knows_over_10-12-25.zip",
@@ -77,6 +85,32 @@ function App() {
                         >
                             Download MP3
                         </a> */}
+                    </div>
+                ))}
+            </div>
+
+            <h1 className="text-2xl font-bold my-6 mt-10">
+                old lineup new songs
+            </h1>
+            {/* pdf enabled */}
+            <div className="space-y-4">
+                {oldLineup.map((track) => (
+                    <div key={track.name} className="border p-4 rounded-lg">
+                        <div className="flex justify-between items-center mb-2">
+                            <h2 className="text-lg">{track.name}</h2>
+                            <a
+                                href={track.pdf}
+                                download
+                                className="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+                            >
+                                Download PDF
+                            </a>
+                        </div>
+
+                        <audio controls className="w-full mb-2">
+                            <source src={track.file} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
                     </div>
                 ))}
             </div>
