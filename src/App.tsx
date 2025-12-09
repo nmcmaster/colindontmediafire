@@ -6,6 +6,10 @@ function App() {
             name: "Who Knows Bass",
             file: "/audio/who knows bass over 10-12-25.mp3",
         },
+        {
+            name: "Porridger og Bass",
+            file: "/audio/porridger og bass.mp3",
+        },
         { name: "Mick Xerxes w/bass", file: "/audio/xerx werx.mp3" },
     ];
     const kernels = [
@@ -19,7 +23,7 @@ function App() {
     const oldLineup = [
         {
             name: "Darius guitar overdub on rehearsal",
-            file: "/audio/darius rehearsal overdub 10062025.mp3",
+            file: "/audio/darius rehearsal overdub 10122025.mp3",
             pdf: "/pdf/darius.pdf",
         },
         { name: "No hope", file: "", pdf: "/pdf/no hope 093025" },
@@ -40,6 +44,10 @@ function App() {
         {
             href: "https://www.mediafire.com/file/58424eglig9pef4/xerxes+original.zip/",
             alt: "xerxes stems",
+        },
+        {
+            href: "https://www.mediafire.com/file/nhzyw6t8i0f6i0n/porridger+og+bass+solo.aif/file",
+            alt: "porridger og solo morely bass",
         },
     ];
     return (
