@@ -1,5 +1,5 @@
 import "./App.css";
-
+// no hope colin plus edit plus solo 122125 LEV DRUMS
 function App() {
     const bass = [
         {
@@ -20,13 +20,28 @@ function App() {
             file: "/audio/a better tomorrow original.mp3",
         },
     ];
-    const oldLineup = [
+    const nhdr = [
+        {
+            name: "No hope colin plus edit plus solo",
+            file: "/audio/no-hope/no hope colin plus edit plus solo 122125.mp3",
+        },
+        {
+            name: "No hope colin plus edit plus solo LEV DRUMS only",
+            file: "/audio/no-hope/no hope colin plus edit plus solo 122125 LEV DRUMS.mp3",
+        },
+        {
+            name: "1st double drums",
+            file: "/audio/no-hope/1st double drum.mp3",
+        },
+        {
+            name: "2nd double drums",
+            file: "/audio/no-hope/2nd double drum.mp3",
+        },
         {
             name: "Darius guitar overdub on rehearsal",
             file: "/audio/darius rehearsal overdub 10122025.mp3",
             pdf: "/pdf/darius.pdf",
         },
-        { name: "No hope", file: "", pdf: "/pdf/no hope 093025" },
     ];
     const links = [
         {
@@ -52,6 +67,28 @@ function App() {
     ];
     return (
         <div className="font-serif p-8">
+            <h1 className="text-2xl font-bold mb-6">no hope & darius</h1>
+
+            <div className="space-y-4 mb-12">
+                {nhdr.map((track) => (
+                    <div key={track.name} className="border p-4 rounded-lg">
+                        <h2 className="text-lg mb-2">{track.name}</h2>
+
+                        <audio controls className="w-full mb-2">
+                            <source src={track.file} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+
+                        {/* <a
+                            href={track.file}
+                            download
+                            className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        >
+                            Download MP3
+                        </a> */}
+                    </div>
+                ))}
+            </div>
             <h1 className="text-2xl font-bold mb-6">bass demos</h1>
 
             <div className="space-y-4">
@@ -97,10 +134,10 @@ function App() {
                 ))}
             </div>
 
-            <h1 className="text-2xl font-bold my-6 mt-10">
+            {/* <h1 className="text-2xl font-bold my-6 mt-10">
                 old lineup new songs
             </h1>
-            {/* pdf enabled */}
+     
             <div className="space-y-4">
                 {oldLineup.map((track) => (
                     <div key={track.name} className="border p-4 rounded-lg">
@@ -121,7 +158,7 @@ function App() {
                         </audio>
                     </div>
                 ))}
-            </div>
+            </div>  */}
             <h1 className="text-2xl font-bold my-6 mt-10">stem zips</h1>
             {links.map((link) => (
                 <a
