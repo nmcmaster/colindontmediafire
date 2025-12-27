@@ -38,8 +38,8 @@ function App() {
             file: "/audio/no-hope/2nd double drum.mp3",
         },
         {
-            name: "Darius guitar overdub on rehearsal",
-            file: "/audio/darius rehearsal overdub 10122025.mp3",
+            name: "Darius guitar overdub on 10-12-25 caves rehearsal",
+            file: "/audio/darius 10-12-25 overdub guitar.mp3",
             pdf: "/pdf/darius.pdf",
         },
     ];
