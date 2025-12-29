@@ -3,6 +3,10 @@ import "./App.css";
 function App() {
     const bass = [
         {
+            name: "a better a better tomorrow bass",
+            file: "/audio/a better tomorrow bass.mp3",
+        },
+        {
             name: "Who Knows Bass",
             file: "/audio/who knows bass over 10-12-25.mp3",
         },
@@ -45,6 +49,10 @@ function App() {
     ];
     const links = [
         {
+            href: "https://www.mediafire.com/file/3h7eowto2fvozga/a+better+tomorrow+bass.zip",
+            alt: "a better a better tomorrow bass",
+        },
+        {
             href: "https://www.mediafire.com/file/0crqrnahjvcxon1/who_knows_over_10-12-25.zip",
             alt: "who knows bass stems",
         },
@@ -53,7 +61,7 @@ function App() {
             alt: "drug war stems",
         },
         {
-            href: "https://www.mediafire.com/file/f7ra0mxwz29lxt1/a_better_tomorrow_original_stems.zip/",
+            href: "https://www.mediafire.com/file/f7ra0mxwz29lxt1/a_better_tomorrow_original_stems.zip",
             alt: "a better tomorrow stems",
         },
         {
@@ -61,34 +69,12 @@ function App() {
             alt: "xerxes stems",
         },
         {
-            href: "https://www.mediafire.com/file/nhzyw6t8i0f6i0n/porridger+og+bass+solo.aif/file",
+            href: "https://www.mediafire.com/file/nhzyw6t8i0f6i0n/porridger+og+bass+solo.aif",
             alt: "porridger og solo morely bass",
         },
     ];
     return (
         <div className="font-serif p-8">
-            <h1 className="text-2xl font-bold mb-6">no hope & darius</h1>
-
-            <div className="space-y-4 mb-12">
-                {nhdr.map((track) => (
-                    <div key={track.name} className="border p-4 rounded-lg">
-                        <h2 className="text-lg mb-2">{track.name}</h2>
-
-                        <audio controls className="w-full mb-2">
-                            <source src={track.file} type="audio/mpeg" />
-                            Your browser does not support the audio element.
-                        </audio>
-
-                        {/* <a
-                            href={track.file}
-                            download
-                            className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-                        >
-                            Download MP3
-                        </a> */}
-                    </div>
-                ))}
-            </div>
             <h1 className="text-2xl font-bold mb-6">bass demos</h1>
 
             <div className="space-y-4">
@@ -111,7 +97,29 @@ function App() {
                     </div>
                 ))}
             </div>
-            <h1 className="text-2xl font-bold my-6 mt-10">guitar fragments</h1>
+            <h1 className="text-2xl font-bold my-6">no hope & darius</h1>
+
+            <div className="space-y-4 mb-6">
+                {nhdr.map((track) => (
+                    <div key={track.name} className="border p-4 rounded-lg">
+                        <h2 className="text-lg mb-2">{track.name}</h2>
+
+                        <audio controls className="w-full mb-2">
+                            <source src={track.file} type="audio/mpeg" />
+                            Your browser does not support the audio element.
+                        </audio>
+
+                        {/* <a
+                            href={track.file}
+                            download
+                            className="inline-block bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                        >
+                            Download MP3
+                        </a> */}
+                    </div>
+                ))}
+            </div>
+            <h1 className="text-2xl font-bold my-6">guitar fragments</h1>
 
             <div className="space-y-4">
                 {kernels.map((track) => (
