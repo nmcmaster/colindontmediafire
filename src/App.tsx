@@ -2,6 +2,7 @@ import "./App.css";
 // no hope colin plus edit plus solo 122125 LEV DRUMS
 function App() {
     const bass = [
+        { name: "porridger 2 bass", file: "/audio/porridger 2 bass" },
         {
             name: "a better a better tomorrow bass",
             file: "/audio/a better tomorrow bass.mp3",
@@ -48,6 +49,10 @@ function App() {
         },
     ];
     const links = [
+        {
+            href: "https://www.mediafire.com/file/4g0prk4qgsqotzf/porridger+2+bass+solo.aif/file",
+            alt: "porridger 2 bass",
+        },
         {
             href: "https://www.mediafire.com/file/3h7eowto2fvozga/a+better+tomorrow+bass.zip",
             alt: "a better a better tomorrow bass",
