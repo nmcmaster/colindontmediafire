@@ -2,6 +2,7 @@ import "./App.css";
 // no hope colin plus edit plus solo 122125 LEV DRUMS
 function App() {
     const bass = [
+        { name: "aasil bass", file: "/audio/aasil bass.mp3" },
         { name: "ants colin bass", file: "/audio/ants colin bass.mp3" },
         { name: "porridger 2 bass", file: "/audio/porridger 2 bass.mp3" },
         {
